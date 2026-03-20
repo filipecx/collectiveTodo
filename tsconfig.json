@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext", // <--- Certifique-se que está ESNext ou ES2020+
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": false, // Deixe false para o compilador não reclamar
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "isolatedModules": true, // Recomendado para 'bundler'
+    "moduleDetection": "force",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "types": [
+      "node"
+    ]
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
