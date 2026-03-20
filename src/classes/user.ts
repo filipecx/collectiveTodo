@@ -1,6 +1,6 @@
 export interface UserProps {
     id: string
-    name: string
+    username: string
     password: string
 }
 
@@ -14,7 +14,7 @@ export class User {
     }
 
     get name(): string  {
-        return this.userProps.name
+        return this.userProps.username
     }
 
     get password(): string {
@@ -22,7 +22,7 @@ export class User {
     }
 
     changeName(newName: string): string {
-        this.userProps.name = newName
-        return this.userProps.name
+        this.userProps.username = newName
+        return this.userProps.username
     }
 }
